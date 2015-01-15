@@ -1,0 +1,7 @@
+[user]
+	name = baptiste.gaze@people-doc.com
+	email = baptiste.gaze@people-doc.com
+[core]
+	editor = vim
+[push]
+	default = simple
