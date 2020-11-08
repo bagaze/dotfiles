@@ -47,11 +47,11 @@ ItemDisplay[(hp1 OR hp2 OR hp3 OR mp1 OR mp2 OR mp3) DIFFICULTY>0]:
 ItemDisplay[(hp4 OR mp4) DIFFICULTY>1]:
 
 //Utilites
-ItemDisplay[tsc CLVL<31]: %BLUE%* %GRAY%TP scroll
-ItemDisplay[isc CLVL<31]: %RED%* %GRAY%ID scroll
+ItemDisplay[tsc]: %BLUE%* %GRAY%TP
+ItemDisplay[isc]: %RED%* %GRAY%ID
 ItemDisplay[vps CLVL<31]: %GREEN%!%WHITE%stamina
 ItemDisplay[wms CLVL<31]: %GREEN%!%WHITE%thaw
-ItemDisplay[(tsc OR isc OR vps OR wms) CLVL>30]:
+ItemDisplay[(vps OR wms) CLVL>30]:
 ItemDisplay[yps]: %GREEN%!%WHITE%ant
 ItemDisplay[key]: %GRAY%key%CONTINUE%
 
