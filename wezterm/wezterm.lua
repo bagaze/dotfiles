@@ -50,9 +50,9 @@ config.default_cursor_style = "BlinkingBar"
 config.enable_tab_bar = true
 config.tab_bar_at_bottom = true
 config.use_fancy_tab_bar = false
-config.hide_tab_bar_if_only_one_tab = true
+-- config.hide_tab_bar_if_only_one_tab = true
 config.tab_max_width = 80
-config.tab_and_split_indices_are_zero_based = true
+-- config.tab_and_split_indices_are_zero_based = true
 
 -- system
 config.term = "xterm-256color"
