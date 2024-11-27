@@ -11,7 +11,7 @@ config.initial_rows = 30
 config.initial_cols = 120
 
 -- Font
-config.font = wezterm.font("Iosevka Term", {
+config.font = wezterm.font("IosevkaTerm Nerd Font", {
 	-- stretch = "Expanded",
 	weight = "Bold",
 })
@@ -39,6 +39,8 @@ config.window_padding = {
 -- Use kitty protocol
 config.enable_kitty_keyboard = true
 config.enable_csi_u_key_encoding = false
+config.send_composed_key_when_left_alt_is_pressed = false
+config.send_composed_key_when_right_alt_is_pressed = true
 
 -- Disable action bar
 config.window_decorations = "RESIZE"
@@ -102,7 +104,8 @@ local function bind_super_key_to_vim(key)
 	}
 end
 
---- in your wezterm keys config, use it like:
+-- Key bindings
+config.leader = { key = "Space", mods = "CTRL", timeout_milliseconds = 2000 }
 config.keys = {
 	bind_super_key_to_vim("c"),
 	bind_super_key_to_vim("w"),
@@ -189,7 +192,114 @@ config.keys = {
 		mods = "CMD|SHIFT",
 		action = act.MoveTabRelative(1),
 	},
+	-- Tmux like cfg
+	{
+		mods = "LEADER",
+		key = "c",
+		action = wezterm.action.SpawnTab("CurrentPaneDomain"),
+	},
+	{
+		mods = "LEADER",
+		key = "x",
+		action = wezterm.action.CloseCurrentPane({ confirm = true }),
+	},
+	{
+		mods = "LEADER",
+		key = "b",
+		action = wezterm.action.ActivateTabRelative(-1),
+	},
+	{
+		mods = "LEADER",
+		key = "n",
+		action = wezterm.action.ActivateTabRelative(1),
+	},
+	{
+		mods = "LEADER",
+		key = "=",
+		action = wezterm.action.SplitHorizontal({ domain = "CurrentPaneDomain" }),
+	},
+	{
+		mods = "LEADER",
+		key = "-",
+		action = wezterm.action.SplitVertical({ domain = "CurrentPaneDomain" }),
+	},
+	{
+		mods = "LEADER",
+		key = "h",
+		action = wezterm.action.ActivatePaneDirection("Left"),
+	},
+	{
+		mods = "LEADER",
+		key = "j",
+		action = wezterm.action.ActivatePaneDirection("Down"),
+	},
+	{
+		mods = "LEADER",
+		key = "k",
+		action = wezterm.action.ActivatePaneDirection("Up"),
+	},
+	{
+		mods = "LEADER",
+		key = "l",
+		action = wezterm.action.ActivatePaneDirection("Right"),
+	},
+	{
+		mods = "LEADER",
+		key = "LeftArrow",
+		action = wezterm.action.AdjustPaneSize({ "Left", 5 }),
+	},
+	{
+		mods = "LEADER",
+		key = "RightArrow",
+		action = wezterm.action.AdjustPaneSize({ "Right", 5 }),
+	},
+	{
+		mods = "LEADER",
+		key = "DownArrow",
+		action = wezterm.action.AdjustPaneSize({ "Down", 5 }),
+	},
+	{
+		mods = "LEADER",
+		key = "UpArrow",
+		action = wezterm.action.AdjustPaneSize({ "Up", 5 }),
+	},
+	{
+		key = "z",
+		mods = "LEADER",
+		action = wezterm.action.TogglePaneZoomState,
+	},
+	-- {
+	-- 	key = "f",
+	-- 	mods = "LEADER",
+	-- 	action = wezterm.action.ToggleAlwaysOnTop,
+	-- },
 }
+
+-- tmux status
+-- wezterm.on("update-right-status", function(window, _)
+-- 	local SOLID_LEFT_ARROW = ""
+-- 	local ARROW_FOREGROUND = { Foreground = { Color = "#c6a0f6" } }
+-- 	local prefix = ""
+--
+-- 	if window:leader_is_active() then
+-- 		prefix = " " .. utf8.char(0x1f30a) -- ocean wave
+-- 		SOLID_LEFT_ARROW = utf8.char(0xe0b2)
+-- 	end
+--
+-- 	if window:active_tab():tab_id() ~= 0 then
+-- 		ARROW_FOREGROUND = { Foreground = { Color = "#1e2030" } }
+-- 	end -- arrow color based on if tab is first pane
+--
+-- 	window:set_left_status(wezterm.format({
+-- 		{ Background = { Color = "#b7bdf8" } },
+-- 		{ Text = prefix },
+-- 		ARROW_FOREGROUND,
+-- 		{ Text = SOLID_LEFT_ARROW },
+-- 	}))
+-- end)
+
+local bar = wezterm.plugin.require("https://github.com/adriankarlen/bar.wezterm")
+bar.apply_to_config(config)
 
 -- and finally, return the configuration to wezterm
 return config
