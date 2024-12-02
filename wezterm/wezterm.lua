@@ -16,7 +16,8 @@ config.font = wezterm.font("IosevkaTerm Nerd Font", {
 	weight = "Bold",
 })
 config.font_size = 15.0
-config.color_scheme = "Catppuccin Frappe"
+-- config.color_scheme = "Catppuccin Frappe"
+config.color_scheme = "Rosé Pine Moon (base16)"
 config.bold_brightens_ansi_colors = true
 
 -- System
@@ -27,8 +28,8 @@ config.animation_fps = 10
 config.use_ime = false
 
 -- window
-config.window_background_opacity = 0.97
-config.macos_window_background_blur = 30
+config.window_background_opacity = 0.96
+config.macos_window_background_blur = 25
 config.window_padding = {
 	left = 2,
 	right = 2,
