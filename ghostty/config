@@ -1,0 +1,26 @@
+# Fonts
+font-family            = "IosevkaTermSlab Nerd Font Mono"
+font-style             = "IosevkaTermSlab NFM Bold"
+font-style-bold        = "IosevkaTermSlab NFM ExtraBold"
+font-style-italic      = "IosevkaTermSlab NFM Bold Italic"
+font-style-bold-italic = "IosevkaTermSlab NFM ExtraBold Oblique"
+font-size              = 15
+bold-is-bright         = true
+
+# Theme
+theme                  = "rose-pine-moon-custom"
+background-opacity     = 0.97
+background-blur-radius = 20
+
+# MacOS
+macos-titlebar-style          = "tabs"
+quit-after-last-window-closed = true
+macos-option-as-alt           = left
+
+# Other
+scrollback-limit = 3500
+
+# Keybindings
+keybind = super+shift+l=unbind
+keybind = super+shift+l=next_tab
+keybind = super+shift+h=previous_tab

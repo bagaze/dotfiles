@@ -1,0 +1,23 @@
+# scheme: "Rosé Pine Moon"
+# author: "Emilia Dunfelt <edun@dunfelt.se>"
+palette = 0=#232137
+palette = 1=#EB6F92
+palette = 2=#3E8FB0
+palette = 3=#EB9A97
+palette = 4=#C4A7E7
+palette = 5=#F6C177
+palette = 6=#9DCED9
+palette = 7=#E0DEF4
+palette = 8=#6E6A86
+palette = 9=#EB6F92
+palette = 10=#3E8FB0
+palette = 11=#EB9A97
+palette = 12=#C4A7E7
+palette = 13=#F6C177
+palette = 14=#9DCED9
+palette = 15=#56526E
+background = 232136
+foreground = e0def4
+cursor-color = e0def4
+selection-background = 232136
+selection-foreground = e0def4
