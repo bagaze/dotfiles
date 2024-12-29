@@ -19,6 +19,7 @@ config.font_size = 15.0
 -- config.color_scheme = "Catppuccin Macchiato"
 config.color_scheme = "Rosé Pine Moon (base16)"
 config.bold_brightens_ansi_colors = true
+config.freetype_load_flags = "NO_HINTING"
 
 -- System
 config.audible_bell = "Disabled"
