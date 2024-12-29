@@ -43,5 +43,7 @@ def handle_result(args, result, target_window_id, boss):
         window.copy_and_clear_or_interrupt()
     elif cmd == "paste": # this is new
         window.paste_selection_or_clipboard()
+    elif cmd == "close_tab": # this is new
+        boss.close_tab()
     else:
         boss.active_tab.neighboring_window(cmd)
