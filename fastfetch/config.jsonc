@@ -31,10 +31,10 @@
     "break",
     "colors"
   ],
-  "logo": {
-      "type": "kitty-direct",
-      "source": "~/.config/fastfetch/logo/apple.png",
-      "width": 32,
-      "height": 15
-  },
+  // "logo": {
+  //     "type": "kitty-direct",
+  //     "source": "~/.config/fastfetch/logo/apple.png",
+  //     "width": 32,
+  //     "height": 15
+  // },
 }
