@@ -27,12 +27,20 @@ fish_add_path ~/.orbstack/bin
 # Postgres
 fish_add_path /opt/homebrew/opt/libpq/bin
 
-# Load secrets
-source ~/.config/fish/secret.fish
+# Load local cfg and secrets
+if test -e ~/.config/fish/local.fish
+    source ~/.config/fish/local.fish
+end
+if test -e ~/.config/fish/secret.fish
+    source ~/.config/fish/secret.fish
+end
 
 # Fish theme
 # fish_config theme choose "Rose Pine Moon"
 source ~/.config/fish/themes/tokyonight_moon.fish
+
+# Zoxide
+zoxide init fish | source
 
 # Fish greeting
 function fish_greeting
