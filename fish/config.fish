@@ -49,6 +49,9 @@ function fish_greeting
     fastfetch
 end
 
+# Task completion
+task --completion fish | source
+
 # Fzf theme
 ## Catppuccin Frappe theme
 # set -Ux FZF_DEFAULT_OPTS "\
