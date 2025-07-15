@@ -35,6 +35,9 @@ if test -e ~/.config/fish/secret.fish
     source ~/.config/fish/secret.fish
 end
 
+# EDITOR
+set -gx EDITOR nvim
+
 # Fish theme
 # fish_config theme choose "Rose Pine Moon"
 source ~/.config/fish/themes/tokyonight_moon.fish
