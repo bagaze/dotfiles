@@ -193,6 +193,8 @@ automatically-unhide-macos-hidden-apps = true
     # See: https://nikitabobko.github.io/AeroSpace/commands#mode
     alt-shift-semicolon = 'mode service'
 
+    cmd-semicolon = 'mode X'
+
 # 'service' binding mode declaration.
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
 [mode.service.binding]
@@ -212,6 +214,12 @@ automatically-unhide-macos-hidden-apps = true
     down = 'volume down'
     up = 'volume up'
     shift-down = ['volume set 0', 'mode main']
+
+
+[mode.X.binding]
+    # A mode to just pass keys through!
+    cmd-semicolon = 'mode main'
+    esc = 'mode main'
 
 [workspace-to-monitor-force-assignment]
     1 = 'main'
