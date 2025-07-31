@@ -232,6 +232,14 @@ automatically-unhide-macos-hidden-apps = true
     run = 'layout floating'
 
 [[on-window-detected]]
+    if.app-id = 'com.apple.accessibility.universalAccessAuthWarn'
+    run = 'layout floating'
+
+[[on-window-detected]]
+    if.app-id = 'club.mediosz.SwipeAeroSpace'
+    run = 'layout floating'
+
+[[on-window-detected]]
     if.app-id = 'com.google.Chrome'
     run = 'move-node-to-workspace 1'
 
