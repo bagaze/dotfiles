@@ -141,6 +141,10 @@ automatically-unhide-macos-hidden-apps = true
     alt-e = 'workspace E' # In your config, you can drop workspace bindings that you don't need
     alt-w = 'workspace W'
 
+    # You need to disable mission control keybinds in MacOS for these to work
+    ctrl-left  = 'exec-and-forget aerospace list-workspaces --monitor focused --empty no | aerospace workspace --wrap-around prev'
+    ctrl-right = 'exec-and-forget aerospace list-workspaces --monitor focused --empty no | aerospace workspace --wrap-around next'
+
     # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
     alt-shift-1 = 'move-node-to-workspace 1'
     alt-shift-2 = 'move-node-to-workspace 2'
