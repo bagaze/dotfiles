@@ -215,9 +215,9 @@ automatically-unhide-macos-hidden-apps = true
     7 = 'main'
     8 = 'main'
     9 = 'main'
-    q = ['secondary', 'main']
-    w = ['secondary', 'main']
-    e = ['secondary', 'main']
+    Q = ['secondary', 'main']
+    W = ['secondary', 'main']
+    E = ['secondary', 'main']
 
 [[on-window-detected]]
     if.app-id = 'com.apple.finder'
