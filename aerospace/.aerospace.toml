@@ -269,4 +269,4 @@ automatically-unhide-macos-hidden-apps = true
 
 [[on-window-detected]]
     if.app-id = 'org.chromium.Chromium'
-    run = 'move-node-to-workspace W'
+    run = 'move-node-to-workspace Q'
