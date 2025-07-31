@@ -168,7 +168,6 @@ automatically-unhide-macos-hidden-apps = true
     alt-shift-semicolon = 'mode service'
 
     cmd-semicolon = 'mode X'
-    alt-x = 'mode X'
 
     # See https://nikitabobko.github.io/AeroSpace/goodies#i3-like-config
     alt-r = 'mode resize'
@@ -197,7 +196,6 @@ automatically-unhide-macos-hidden-apps = true
 [mode.X.binding]
     # A mode to just pass keys through!
     cmd-semicolon = 'mode main'
-    alt-x = 'mode main'
     esc = 'mode main'
 
 [mode.resize.binding]
