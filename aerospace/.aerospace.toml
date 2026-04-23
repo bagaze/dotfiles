@@ -23,7 +23,7 @@ enable-normalization-opposite-orientation-for-nested-containers = true
 # See: https://nikitabobko.github.io/AeroSpace/guide#layouts
 # The 'accordion-padding' specifies the size of accordion padding
 # You can set 0 to disable the padding feature
-accordion-padding = 10
+accordion-padding = 0
 
 # Possible values: tiles|accordion
 default-root-container-layout = 'tiles'
@@ -327,15 +327,15 @@ automatically-unhide-macos-hidden-apps = true
     run = 'move-node-to-workspace 4'
 
 [[on-window-detected]]
-    if.app-id = 'net.whatsapp.WhatsApp'
+    if.app-id = 'com.apple.Music'
     run = 'move-node-to-workspace 5'
+
+[[on-window-detected]]
+    if.app-id = 'net.whatsapp.WhatsApp'
+    run = 'move-node-to-workspace 6'
 
 [[on-window-detected]]
     if.app-id = 'ru.keepcoder.Telegram'
-    run = 'move-node-to-workspace 5'
-
-[[on-window-detected]]
-    if.app-id = 'com.apple.Music'
     run = 'move-node-to-workspace 6'
 
 [[on-window-detected]]
