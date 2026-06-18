@@ -11,6 +11,7 @@ alias dcL="dclf --tail 300"
 alias lrt="eza -l -snew --icons"
 alias vi="nvim"
 alias vim="nvim"
+alias t="task"
 ## Kitty alias
 alias ssh="kitten ssh"
 
@@ -54,6 +55,9 @@ end
 
 # Task completion
 task --completion fish | source
+
+# Brew auto accept upgrade
+set -gx HOMEBREW_NO_ASK 1
 
 # Fzf theme
 ## Catppuccin Frappe theme
