@@ -1,26 +1,44 @@
 # Fonts
-font-family            = "IosevkaTermSlab Nerd Font Mono"
-font-style             = "IosevkaTermSlab NFM Bold"
-font-style-bold        = "IosevkaTermSlab NFM ExtraBold"
-font-style-italic      = "IosevkaTermSlab NFM Bold Italic"
-font-style-bold-italic = "IosevkaTermSlab NFM ExtraBold Oblique"
-font-size              = 15
-bold-is-bright         = true
+font-family             = "Iosevka Term SS14 SemiBold"
+font-family-bold        = "Iosevka Term SS14 ExtraBold"
+font-family-italic      = "Iosevka Term SS14 SemiBold Italic"
+font-family-bold-italic = "Iosevka Term SS14 ExtraBold Italic"
+font-codepoint-map      = U+e000-U+e00a,U+ea60-U+ebeb,U+e0a0-U+e0c8,U+e0ca,U+e0cc-U+e0d7,U+e200-U+e2a9,U+e300-U+e3e3,U+e5fa-U+e6b1,U+e700-U+e7c5,U+ed00-U+efc1,U+f000-U+f2ff,U+f000-U+f2e0,U+f300-U+f372,U+f400-U+f533,U+f0001-U+f1af0=JetBrainsMono Nerd Font Mono
+font-size               = 15
+font-thicken            = true
 
 # Theme
-theme                  = "rose-pine-moon-custom"
+# theme                  = "rose-pine-moon-custom"
+theme                  = "TokyoNight Moon"
 background-opacity     = 0.97
 background-blur-radius = 20
 
 # MacOS
-macos-titlebar-style          = "tabs"
+macos-titlebar-style          = "hidden"
 quit-after-last-window-closed = true
 macos-option-as-alt           = left
+macos-window-buttons          = "hidden"
+
+# Cursor
+cursor-style                  = bar
+cursor-style-blink            = true
+
+# Prevent shell to drop the selected style
+shell-integration-features    = no-cursor
+
+# Mouse
+mouse-scroll-multiplier       = 1.0
+
 
 # Other
-scrollback-limit = 3500
+scrollback-limit = 7000
 
 # Keybindings
 keybind = super+shift+l=unbind
-keybind = super+shift+l=next_tab
-keybind = super+shift+h=previous_tab
+keybind = super+shift+j=unbind
+# keybind = super+shift+l=next_tab
+# keybind = super+shift+h=previous_tab
+# keybind = super+alt+j=goto_split:up
+# keybind = super+alt+k=goto_split:down
+# keybind = super+alt+h=goto_split:left
+# keybind = super+alt+l=goto_split:right
