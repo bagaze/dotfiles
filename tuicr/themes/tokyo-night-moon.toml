@@ -1,0 +1,55 @@
+# Thème local Tokyo Night Moon (Haute visibilité) pour tuicr.
+panel_bg = "#1b1d2b"
+bg_highlight = "#2d3f76"
+fg_primary = "#c8d3f5"
+fg_secondary = "#a9b1d6"
+fg_dim = "#787c99"
+
+# DIFFÉRENCES (ARRIÈRE-PLANS PLUS CLAIRS ET VISIBLES)
+diff_add            = "#ffffff"  # Blanc pur pour maximiser le contraste sur le fond vert
+diff_add_bg         = "#1d4436"  # Vert émeraude nettement plus clair et visible
+diff_del            = "#ffffff"  # Blanc pur pour maximiser le contraste sur le fond rouge
+diff_del_bg         = "#5c2538"  # Rouge bordeaux nettement plus clair et visible
+diff_context        = "#c8d3f5"  # Couleur de texte Tokyo Night standard
+diff_hunk_header    = "#82a1f1"  # Bleu clair pour séparer les blocs
+expanded_context_fg = "#6a6f8e"
+
+syntax_add_bg       = "#1d4436"  # Aligné sur le fond vert plus clair
+syntax_del_bg       = "#5c2538"  # Aligné sur le fond rouge plus clair
+
+# STATUT DES FICHIERS
+file_added = "#b9f27c"
+file_modified = "#ff9e64"
+file_deleted = "#ff5370"
+file_renamed = "#bb9af7"
+
+reviewed = "#b9f27c"
+pending = "#ff9e64"
+
+# TYPES DE COMMENTAIRES
+comment_note = "#82a1f1"
+comment_suggestion = "#4fd6be"
+comment_issue = "#f7768e"
+comment_praise = "#c0caf5"
+
+# BORDURES ET INTERFACE
+border_focused = "#82a1f1"
+border_unfocused = "#3b4261"
+status_bar_bg = "#1e2030"
+cursor_color = "#ff9e64"
+cursor_line_bg = "#222436"
+branch_name = "#bb9af7"
+help_indicator = "#787c99"
+
+# MESSAGES & NOTIFICATIONS
+message_info_fg = "#1e2030"
+message_info_bg = "#82a1f1"
+message_warning_fg = "#1e2030"
+message_warning_bg = "#ff9e64"
+message_error_fg = "#1e2030"
+message_error_bg = "#f7768e"
+update_badge_fg = "#1e2030"
+update_badge_bg = "#ff9e64"
+
+mode_fg = "#1e2030"
+mode_bg = "#4fd6be"
