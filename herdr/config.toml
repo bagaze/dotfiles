@@ -27,6 +27,8 @@ next_tab = "cmd+shift+l"
 previous_tab = "cmd+shift+h"
 move_tab_previous = "cmd+shift+left"
 move_tab_next = "cmd+shift+right"
+split_horizontal = "prefix+;"
+split_vertical = "prefix+'"
 
 [[keys.command]]
 key = "ctrl+h"
